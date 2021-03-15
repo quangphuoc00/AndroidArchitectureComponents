@@ -1,0 +1,14 @@
+//plugins {
+////    id 'kotlin-kapt'
+//}
+apply plugin: 'kotlin-kapt'
+
+
+dependencies {
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion"
+}
